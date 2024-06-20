@@ -17,7 +17,8 @@ function update_captions(){
       "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>Pasaporte</span>",
       "<span style='font-size:20px;display:inline-block;line-height:20px;vertical-align:middle'>Marset</span>",
       "<span style='font-size:20px'>Falopa</span>", "Lacalle",
-      "<span style='font-size:20px'>Fingir demencia</span>", "Campechano", "Chamuyo",
+      "<span style='font-size:20px;display:inline-block;line-height:20px;vertical-align:middle'>Fingir demencia</span>",
+      "<span style='font-size:20px'>Campechano</span>", "Chamuyo",
       "<span style='font-size:smaller'>Turbiedad</span>",
       "<span style='font-size:smaller'>Pedofilia</span>", "Penades", "Encubrimiento"];
     captions_rel = ["<span style='font-size:15px;'>Sin frazada</span>",
