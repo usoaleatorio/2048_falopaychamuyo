@@ -1,27 +1,27 @@
 function update_captions(){
   if(window.innerWidth < 520){
-    captions = ["Coffee", "Panini",
-      "Idea", "Code",
-      "<span style='display:inline-block;line-height:11px;vertical-align:middle'>Deep Learning</span>",
-      "<span style='font-size:11px;display:inline-block;line-height:11px;vertical-align:middle'>See Supervisor</span>",
-      "<span style='font-size:11px'>Experiment</span>", "Paper",
-      "<span style='font-size:11px'>Conference</span>", "Viva", "PhD",
-      "<span style='font-size:smaller'>Postdoc</span>",
-      "<span style='font-size:smaller'>Lecturer</span>", "Reader", "Prof."];
-    captions_rel = ["<span style='font-size:9px;'>Relationship</span>",
-      "<span style='font-size:11px;'>Break-up</span>"];
+    captions = ["Astesiano", "Piso 4",
+      "Heber", "Bustillo",
+      "<span style='display:inline-block;line-height:11px;vertical-align:middle'>Pasaporte</span>",
+      "<span style='font-size:11px;display:inline-block;line-height:11px;vertical-align:middle'>Marset</span>",
+      "<span style='font-size:11px'>Falopa</span>", "Lacalle",
+      "<span style='font-size:11px'>Fingir demencia</span>", "Campechano", "Chamuyo",
+      "<span style='font-size:smaller'>Turbiedad</span>",
+      "<span style='font-size:smaller'>Pedofilia</span>", "Penades", "Encubrimiento"];
+    captions_rel = ["<span style='font-size:9px;'>Sin frazada</span>",
+      "<span style='font-size:11px;'>Fiscalía</span>"];
   }
   else{
-    captions = ["Coffee", "Panini",
-      "Idea", "Code",
-      "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>Deep Learning</span>",
-      "<span style='font-size:20px;display:inline-block;line-height:20px;vertical-align:middle'>See Supervisor</span>",
-      "<span style='font-size:20px'>Experiment</span>", "Paper",
-      "<span style='font-size:20px'>Conference</span>", "Viva", "PhD",
-      "<span style='font-size:smaller'>Postdoc</span>",
-      "<span style='font-size:smaller'>Lecturer</span>", "Reader", "Prof."];
-    captions_rel = ["<span style='font-size:15px;'>Relationship</span>",
-      "<span style='font-size:20px;'>Break-up</span>"];
+    captions = ["Astesiano", "Piso 4",
+      "Heber", "Bustillo",
+      "<span style='font-size:24px;display:inline-block;line-height:24px;vertical-align:middle'>Pasaporte</span>",
+      "<span style='font-size:20px;display:inline-block;line-height:20px;vertical-align:middle'>Marset</span>",
+      "<span style='font-size:20px'>Falopa</span>", "Lacalle",
+      "<span style='font-size:20px'>Fingir demencia</span>", "Campechano", "Chamuyo",
+      "<span style='font-size:smaller'>Turbiedad</span>",
+      "<span style='font-size:smaller'>Pedofilia</span>", "Penades", "Encubrimiento"];
+    captions_rel = ["<span style='font-size:15px;'>Sin frazada</span>",
+      "<span style='font-size:20px;'>Fiscalía</span>"];
   }
 }
 
@@ -71,17 +71,17 @@ function play_in_english(){
   update_captions();
   window.addEventListener('resize', update_captions, true);
 
-  caption_garbage = "<span style='font-size:smaller'>Garbage</span>";
+  caption_garbage = "<span style='font-size:smaller'>Chats</span>";
   window.game.actuate();
 
-  game_title = "PhD";
-  game_alt_title = "Love";
-  result_msg = "You got a ";
+  game_title = "Chamuyeyfalopa";
+  game_alt_title = "Corrupción";
+  result_msg = "Obtuviste un ";
   var titleElem = document.getElementById('title');
-  if(titleElem.textContent != "Love") titleElem.textContent = game_title;
-  document.querySelector('.restart-button').textContent = "Drop out";
-  document.querySelector('.retry-button').textContent = "Try again";
-  document.querySelector('.game-explanation').innerHTML = "<strong class='important'>How to play:</strong> Use your <strong>arrow keys</strong> to move the bricks. When two bricks of the same type touch, they <strong>merge into one!</strong><br>However, your ideas and experiments may not always work &mdash; they may produce the sticky <strong>garbage</strong>, which is resistant to moves. Two garbage bricks vanish when they touch. You will stop producing garbage after getting a <strong>paper</strong> (except for one more piece to help you eliminate any existing garbage).<br>A <strong>relationship</strong> upgrades any brick it touches for the first time. The brick shows the number of times you have benefited from it. When the 10-sec relationship ends, it will become a <strong>break-up</strong> (or garbage if you didn't use it), which downgrades bricks until you have repaid the benefits.";
+  if(titleElem.textContent != "Corrupción") titleElem.textContent = game_title;
+  document.querySelector('.restart-button').textContent = "Voy de nuevo";
+  document.querySelector('.retry-button').textContent = "Intenta de nuevo";
+  document.querySelector('.game-explanation').innerHTML = "<strong class='important'>Cómo jugar?:</strong> Utiliza las <strong>flechas</strong> para mover los bloques. Cuando dos bloques del mismo tipo se tocan <strong>se convierten en uno solo!</strong><br>Sin embargo, tus habilidades para corromper el estdo y la vida pueden no funcionar siempre; pueden aparecer  <strong>chats</strong>, que son resistentes a la corrupción. Dos bloques de chatss desaparecen cuando se tocan. Vas a dejar de sufrir los chats luego de conseguir un <strong>Lacalle</strong> <br>Un <strong>sin frazada</strong> sube el nivel de cualquier bloque que toca. El bloque muestra el número de veces que te has beneficiado de él. Cuando termine la relación de 10 segundos, se convertirá en una <strong>Fiscalía</strong> (o chats si no lo has usado), que baja de nivel los bloques hasta que has pagado los beneficios.";
 
   if(span_en) span_en.parentNode.removeChild(span_en);
   create_switch_zh();
