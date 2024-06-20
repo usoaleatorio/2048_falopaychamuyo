@@ -182,7 +182,7 @@ HTMLActuator.prototype.refreshRel = function (remainingTime) {
   }
   else{
     this.titleBar.textContent = game_title;
-    this.statusBar.textContent = "Mueve los bloques para hacer memoria";
+    this.statusBar.textContent = "Mueve los bloques para arrancar la joda";
     this.progressBar.textContent = "";
     this.progressBar.style.display = "none";
     this.progressBar.style.width = "0";
