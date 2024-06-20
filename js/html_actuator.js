@@ -149,11 +149,11 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 };
 
 HTMLActuator.prototype.message = function (ended) {
-  var type    = ended ? "game-won" : "game-over";
-  var message = window.game.won ? result_msg + "PhD!" : result_msg + "<abbr title='Certificate of Postgraduate Studies'>CPGS</abbr>!";
+  var type    = ended ? "Ganaste" : "Perdiste";
+  var message = window.game.won ? result_msg + "Chamuyo!" : result_msg + "<abbr title='Alta falopa'>CPGS</abbr>!";
   if(!window.game.won) {
-    if(window.game.maxTile >= 1024) message = "One step away!";
-    else if(window.game.maxTile >= 512) message = "Not bad!";
+    if(window.game.maxTile >= 1024) message = "Estás cerca!";
+    else if(window.game.maxTile >= 512) message = "Nada mal!";
   }
   else if(window.game.maxTile > 2048) {
     message = result_msg + val2caption(window.game.maxTile) + "!";
@@ -165,14 +165,14 @@ HTMLActuator.prototype.message = function (ended) {
 
 HTMLActuator.prototype.clearMessage = function () {
   // IE only takes one value to remove at a time.
-  this.messageContainer.classList.remove("game-won");
-  this.messageContainer.classList.remove("game-over");
+  this.messageContainer.classList.remove("Ganaste");
+  this.messageContainer.classList.remove("Perdiste");
 };
 
 HTMLActuator.prototype.refreshRel = function (remainingTime) {
   if(remainingTime > 0){
     this.titleBar.textContent = game_alt_title;
-    this.statusBar.textContent = "Your relationship will last for "+remainingTime+"s.";
+    this.statusBar.textContent = "Sin frazada se termina en "+remainingTime+"s.";
     this.progressBar.textContent = game_alt_title;
     this.progressBar.style.display = "";
     if(window.innerWidth < 520)
@@ -182,7 +182,7 @@ HTMLActuator.prototype.refreshRel = function (remainingTime) {
   }
   else{
     this.titleBar.textContent = game_title;
-    this.statusBar.textContent = "Move the bricks to complete your PhD.";
+    this.statusBar.textContent = "Mueve los bloques para hacer memoria";
     this.progressBar.textContent = "";
     this.progressBar.style.display = "none";
     this.progressBar.style.width = "0";
